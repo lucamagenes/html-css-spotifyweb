@@ -37,21 +37,89 @@
  MAIN 
  *********************************/
 
+/********************
+  SIDEBAR 
+  **********************/
+
 .sidebar {
-    width: 200px;
+    width: 300px;
     height: calc(100vh - 100px);
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
 }
+
+.sidebar .logo {
+    padding: 1rem 2rem;
+}
+
+.sidebar .logo img {
+    height: 64px;
+}
+
+.sideicon {
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.sideicon img {
+    height: 30px;
+}
+
+.sideicon a {
+    align-self: center;
+    margin-left: 0.5rem;
+}
+
+.sidebar .playlist {
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+}
+
+.playlist .add_new .add {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: gray;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+}
+
+.playlist .add_new .crea_new {
+    align-self: center;
+    padding-left: 0.5rem;
+}
+
+.playlist .new_playlist li {
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.sidetop a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidetop .add a {
+    color: black;
+}
+
+/*******************
+ CALL TO ACTION 
+ *********************/
 
 .call {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 200px);
+    width: calc(100% - 300px);
     height: 100px;
 }
 
 .site_content {
-    width: calc(100% - 200px);
+    width: calc(100% - 300px);
     height: 100vh;
     overflow: scroll;
     padding: 120px 20px;
