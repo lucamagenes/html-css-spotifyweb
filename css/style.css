@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* DEBUG */
 
 .debug .sidebar {
@@ -33,8 +37,20 @@
     display: flex;
 }
 
-.sidebar h4, .sidebar h5 {
+.sidebar h4, .sidebar h5, .navbar .artist h5 {
     color: white;
+}
+
+.sidebottom .download img, .sidetop .search img, .sidetop .library img {
+    filter: invert(0.4);
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidetop a, .sidebottom a, .site_footer .left .song a, .site_footer .left .folders a {
+    color: gray;
 }
 
 /*********************************
@@ -103,11 +119,6 @@
     list-style: none;
 }
 
-.sidetop a, .sidebottom a {
-    text-decoration: none;
-    color: gray;
-}
-
 .sidetop .add a {
     color: black;
 }
@@ -116,7 +127,6 @@
 
 .sidebottom .download img {
     height: 20px;
-    filter: invert(0.4);
 }
 
 .sidebottom .download {
@@ -165,4 +175,38 @@
     position: fixed;
     bottom: 0;
     left: 0;
+    padding: 1rem;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar .left {
+    align-items: center;
+}
+
+.navbar .left img {
+    height: 60px;
+}
+
+.navbar .left .name_play {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.navbar .left .song, .navbar .left .folders {
+    color: gray;
+}
+
+.navbar .left .folders {
+    margin-left: 3.5rem;
+    font-size: 1.5rem;
+}
+
+.navbar .left .folders .my_folder {
+    margin-left: 1rem;
+}
+
+.left .name_play .song {
+    font-size: 0.8rem;
 }
