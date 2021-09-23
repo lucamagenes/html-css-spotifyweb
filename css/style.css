@@ -206,7 +206,7 @@ a {
 
 .navbar .left .folders {
     margin-left: 3.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .navbar .left .folders .my_folder {
@@ -233,14 +233,14 @@ a {
     justify-content: center;
 }
 
-.navbar .center .controlli .media_icon {
-    margin: 0 1rem;
+.navbar .media_icon {
+    margin: 0 0.5rem;
 }
 
 .navbar .center .controlli .fa-play-circle {
     font-size: 2rem;
     color: white;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 .navbar .center .controlli .media_icon img {
@@ -255,4 +255,15 @@ a {
 .riproduzione p {
     font-size: 0.8rem;
     margin: 0.8rem 2rem;
+}
+
+/* RIGHT */
+
+.navbar .right {
+    align-self: center;
+}
+
+.navbar .right .media_icon {
+    font-size: 1.3rem;
+    color: white;
 }
