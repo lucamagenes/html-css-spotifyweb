@@ -169,6 +169,8 @@ a {
  FOOTER 
  *********************************/
 
+/* LEFT */
+
 .navbar {
     width: 100%;
     height: 100px;
@@ -182,6 +184,10 @@ a {
 
 .navbar .left {
     align-items: center;
+}
+
+.navbar .left .album_play {
+    align-self: center;
 }
 
 .navbar .left img {
@@ -209,4 +215,44 @@ a {
 
 .left .name_play .song {
     font-size: 0.8rem;
+}
+
+/* CENTER */
+
+.navbar .center {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar .center .media_icon {
+    align-self: center;
+}
+
+.navbar .center .controlli, .navbar .center .riproduzione {
+    justify-content: center;
+}
+
+.navbar .center .controlli .media_icon {
+    margin: 0 1rem;
+}
+
+.navbar .center .controlli .fa-play-circle {
+    font-size: 2rem;
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.navbar .center .controlli .media_icon img {
+    height: 20px;
+    filter: invert(1);
+}
+
+.media_icon #before {
+    transform: rotate(180deg);
+}
+
+.riproduzione p {
+    font-size: 0.8rem;
+    margin: 0.8rem 2rem;
 }
