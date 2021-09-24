@@ -154,15 +154,17 @@ a {
     width: 100%;
 }
 
+/* main container */
+
+.main_container {
+    flex-direction: column;
+}
+
 /*******************
  CALL TO ACTION 
  *********************/
 
 .call {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100% - 300px);
     height: 100px;
 }
 
@@ -171,10 +173,9 @@ SITE CONTENT
 ********************************/
 
 .site_content {
-    width: calc(100% - 300px);
-    height: 100vh;
-    overflow: scroll;
-    padding: 120px 20px;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding: 1rem;
 }
 
 /******************************+
