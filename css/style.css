@@ -89,6 +89,10 @@ a {
     height: 30px;
 }
 
+.search h5, .library h5 {
+    color: gray;
+}
+
 .sideicon a {
     align-self: center;
     margin-left: 0.5rem;
@@ -112,6 +116,10 @@ a {
 .playlist .add_new .crea_new {
     align-self: center;
     padding-left: 0.5rem;
+}
+
+.playlist .new_playlist {
+    overflow: scroll;
 }
 
 .playlist .new_playlist li {
@@ -157,6 +165,10 @@ a {
     width: calc(100% - 300px);
     height: 100px;
 }
+
+/******************************
+SITE CONTENT  
+********************************/
 
 .site_content {
     width: calc(100% - 300px);
