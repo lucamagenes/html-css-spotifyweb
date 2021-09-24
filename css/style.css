@@ -43,7 +43,7 @@ body {
     display: flex;
 }
 
-.sidebar h4, .sidebar h5, .navbar .artist h5 {
+.sidebar h4, .sidebar .home a, .sidebar .profile a, .navbar .artist h5 {
     color: white;
 }
 
@@ -57,6 +57,11 @@ a {
 
 .sidetop a, .sidebottom a, .site_footer .left .song a, .site_footer .left .folders a {
     color: gray;
+    transition: all;
+}
+
+.sidetop a:hover, .sidebottom a:hover, .site_footer .left .song a:hover, .site_footer .left .folders a:hover {
+    color: white;
 }
 
 .row {
@@ -116,7 +121,7 @@ a {
     height: 30px;
 }
 
-.search h5, .library h5 {
+.search a, .library a {
     color: gray;
 }
 
@@ -208,6 +213,11 @@ a {
     border: 2px solid white;
     border-radius: 4rem;
     margin-right: 1rem;
+    transition: all;
+}
+
+.btn_call:hover {
+    transform: scale(1.1);
 }
 
 .btn_call a {
@@ -384,6 +394,7 @@ SITE CONTENT
 
 .navbar .center .controlli, .navbar .center .riproduzione {
     justify-content: center;
+    align-items: center;
 }
 
 .navbar .media_icon {
@@ -394,6 +405,11 @@ SITE CONTENT
     font-size: 2rem;
     color: white;
     margin: 0 1rem;
+    transition: all;
+}
+
+.navbar .center .controlli .fa-play-circle:hover {
+    transform: scale(1.1);
 }
 
 .navbar .center .controlli .media_icon img {
@@ -413,10 +429,57 @@ SITE CONTENT
 /* RIGHT */
 
 .navbar .right {
-    align-self: center;
+    align-items: center;
 }
 
-.navbar .right .media_icon {
+.media_icon {
     font-size: 1.3rem;
     color: white;
+}
+
+/* barra riproduzione */
+
+.barra {
+    height: 5px;
+    border-radius: 5rem;
+    background-color: gray;
+    align-items: center;
+    transition: all;
+}
+
+.time {
+    width: 400px;
+}
+
+.volume {
+    width: 150px;
+}
+
+.barra_verde {
+    width: 20%;
+    height: 5px;
+    border-radius: 5rem;
+    background-color: lightgray;
+    transition: all;
+}
+
+.pin_bianco {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    visibility: hidden;
+    transition: all;
+}
+
+.barra:hover {
+    cursor: pointer;
+}
+
+.barra:hover .barra_verde {
+    background-color: lime;
+}
+
+.barra:hover .pin_bianco {
+    visibility: visible;
 }
