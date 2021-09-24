@@ -119,7 +119,7 @@ a {
 }
 
 .playlist .new_playlist {
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .playlist .new_playlist li {
