@@ -33,6 +33,12 @@ body {
  UTILITY 
  ********************************/
 
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
 .flex {
     display: flex;
 }
@@ -51,6 +57,17 @@ a {
 
 .sidetop a, .sidebottom a, .site_footer .left .song a, .site_footer .left .folders a {
     color: gray;
+}
+
+.row {
+    width: 98%;
+    margin: 1rem auto;
+}
+
+.col {
+    float: left;
+    width: calc(100% / 6);
+    padding: 0 0.5rem;
 }
 
 /*********************************
@@ -184,6 +201,58 @@ SITE CONTENT
     height: calc(100% - 100px);
     overflow-y: auto;
     padding: 1rem;
+}
+
+.album_cover {
+    position: relative;
+    transition: all;
+}
+
+.album_cover:hover .overlay {
+    visibility: visible;
+}
+
+.album_cover img {
+    width: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    visibility: hidden;
+}
+
+.album_cover .overlay .fa-play-circle {
+    font-size: 3rem;
+    color: white;
+}
+
+.album_cover .overlay a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album_info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.album_info .artist {
+    font-size: 1rem;
+}
+
+.album_info p {
+    color: gray;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
 }
 
 /******************************+
