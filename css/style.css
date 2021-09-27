@@ -73,6 +73,7 @@ a {
     float: left;
     width: calc(100% / 6);
     padding: 0 0.5rem;
+    min-height: 295px;
 }
 
 /*********************************
@@ -247,6 +248,7 @@ SITE CONTENT
 
 .categorie {
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
@@ -354,6 +356,7 @@ SITE CONTENT
 }
 
 .navbar .left {
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -376,11 +379,12 @@ SITE CONTENT
 }
 
 .navbar .left .folders {
-    margin-left: 3.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 1.3rem;
 }
 
-.navbar .left .folders .my_folder {
+.navbar .left .folders .loved, .navbar .left .folders .my_folder {
     margin-left: 1rem;
 }
 
@@ -437,6 +441,7 @@ SITE CONTENT
 /* RIGHT */
 
 .navbar .right {
+    justify-content: end;
     align-items: center;
 }
 
@@ -490,4 +495,16 @@ SITE CONTENT
 
 .barra:hover .pin_bianco {
     visibility: visible;
+}
+
+/**************************
+ MEDIA QUERY 
+ **************************/
+
+/* MEDIA QUERY  768PX*/
+
+@media screen and (max-width: 768px) {
+    .site_content .col {
+        width: calc(100% / 4);
+    }
 }
