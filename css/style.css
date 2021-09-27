@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    max-width: 1440px;
 }
 
 /* SITE BACKGROUND COLOR */
@@ -90,11 +91,12 @@ a {
 /* SIDETOP */
 
 .sidebar {
-    min-width: 300px;
+    width: 300px;
     height: calc(100vh - 100px);
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    flex-shrink: 1;
 }
 
 .sidebar .logo {
@@ -103,6 +105,7 @@ a {
 
 .sidebar .logo img {
     height: 64px;
+    width: 100%;
 }
 
 .sideicon {
@@ -202,6 +205,7 @@ a {
 .main_container {
     flex-direction: column;
     width: 100%;
+    flex-shrink: 1;
 }
 
 /*******************
@@ -425,15 +429,6 @@ SITE CONTENT
     transform: scale(1.1);
 }
 
-.navbar .center .controlli .media_icon img {
-    height: 20px;
-    filter: invert(1);
-}
-
-.media_icon #before {
-    transform: rotate(180deg);
-}
-
 .riproduzione p {
     font-size: 0.8rem;
     margin: 0.8rem 2rem;
@@ -507,10 +502,145 @@ SITE CONTENT
 /* MEDIA QUERY  768PX*/
 
 @media screen and (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+    .categoria a {
+        font-size: x-small;
+    }
+    .album_info .artist {
+        font-size: 12px;
+    }
+    .album_info p, .riproduzione p {
+        font-size: 9px;
+    }
     .col {
         width: calc(100% / 4);
     }
     #rec .col:nth-child(-n+4) {
-        min-height: 295px;
+        min-height: 240px;
+    }
+    .media_icon, .navbar .left .folders {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* struttura */
+    .site_main, .sidebar {
+        height: calc(100vh - 60px);
+    }
+    .navbar {
+        height: 60px;
+    }
+    .call {
+        height: 60px;
+    }
+    .site_content {
+        height: calc(100% - 60px);
+    }
+    /* flex */
+    .navbar .folders {
+        flex-direction: column;
+    }
+    /* altezze e larghezze */
+    .sidebar {
+        width: 243px;
+    }
+    .sidebar .logo {
+        padding: 12px 15px;
+    }
+    .sidebar .logo img {
+        width: 75%;
+        height: 30px;
+    }
+    .sideicon {
+        padding-left: 15px;
+    }
+    .home {
+        padding-left: 11px;
+    }
+    .sideicon img {
+        width: 50%;
+    }
+    .sidebar .playlist {
+        padding: 0.5rem 15px;
+    }
+    .playlist .add_new .add {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .download, .profile {
+        margin: 0.5rem 15px;
+    }
+    .sidebottom .photo_profile {
+        width: 25px;
+        height: 25px;
+    }
+    .sidebottom .photo_profile img {
+        height: 20px;
+    }
+    /* main container */
+    .col {
+        width: calc(100% / 2);
+    }
+    #rec .col:nth-child(-n+4) {
+        min-height: auto;
+    }
+    .btn_call {
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+    .categoria {
+        margin: 0 0.3rem;
+    }
+    /* footer */
+    .navbar .left img {
+        height: 30px;
+    }
+    .navbar .media_icon {
+        margin: 0 0.3rem;
+    }
+    .riproduzione p {
+        margin: 0.5rem 0.4rem;
+    }
+    .pin_bianco {
+        width: 10px;
+        height: 10px;
+    }
+    /* font size */
+    body {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .categoria a {
+        font-size: x-small;
+    }
+    .album_info .artist {
+        font-size: 12px;
+    }
+    .album_info p, .riproduzione p {
+        font-size: 9px;
+    }
+    .left .name_play .song {
+        font-size: 7px;
+    }
+    .media_icon, .navbar .left .folders {
+        font-size: 10px;
+    }
+    .navbar .center .controlli .fa-play-circle {
+        font-size: 20px;
+    }
+    .album_info .artist {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sidebar {
+        width: 60px;
     }
 }
