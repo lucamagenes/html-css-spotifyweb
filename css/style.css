@@ -685,4 +685,13 @@ SITE CONTENT
     .album_info .artist {
         font-size: 11px;
     }
+    /***********************
+    EXTRA MODIFICHE  
+    **************************/
+    .name_play, .folders, .volume {
+        display: none;
+    }
+    .right {
+        flex-wrap: wrap;
+    }
 }
