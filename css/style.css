@@ -10,23 +10,23 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* DEBUG */
+/* SITE BACKGROUND COLOR */
 
-.debug .sidebar {
+.sidebar {
     background-color: black;
 }
 
-.debug .call {
-    background-color: rgb(27, 27, 27);
+.call {
+    background-color: #080b12;
 }
 
-.debug .site_content {
-    background-color: rgb(0, 0, 43);
+.site_content {
+    background-color: #141922;
     color: white;
 }
 
-.debug .navbar {
-    background-color: rgb(37, 37, 37);
+.navbar {
+    background-color: #282828;
 }
 
 /******************************
@@ -55,12 +55,12 @@ a {
     text-decoration: none;
 }
 
-.sidetop a, .sidebottom a, .site_footer .left .song a, .site_footer .left .folders a {
-    color: gray;
+.sidebar a, .site_footer .left .song a, .site_footer .left .folders a {
+    color: #7b7b7b;
     transition: all;
 }
 
-.sidetop a:hover, .sidebottom a:hover, .site_footer .left .song a:hover, .site_footer .left .folders a:hover {
+.sidebar a:hover, .site_footer .left .song a:hover, .site_footer .left .folders a:hover, .playlist .add a:hover {
     color: white;
 }
 
@@ -113,7 +113,7 @@ a {
 }
 
 .home {
-    border-left: 4px solid lime;
+    border-left: 4px solid #a0eb2e;
     padding-left: 33px;
 }
 
@@ -122,7 +122,7 @@ a {
 }
 
 .search a, .library a {
-    color: gray;
+    color: #7b7b7b;
 }
 
 .sideicon a {
@@ -133,16 +133,22 @@ a {
 .sidebar .playlist {
     flex-direction: column;
     padding: 0.5rem 37px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .playlist .add_new .add {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    background-color: gray;
+    background-color: #a3a3a3;
     text-align: center;
     font-size: 1.6rem;
     margin: 0.5rem 0;
+}
+
+.playlist .add a {
+    color: black;
 }
 
 .playlist .add_new .crea_new {
@@ -152,6 +158,7 @@ a {
 
 .playlist .new_playlist {
     overflow-y: auto;
+    height: calc(100% - 86px);
 }
 
 .playlist .new_playlist li {
@@ -159,11 +166,11 @@ a {
     list-style: none;
 }
 
-.sidetop .add a {
-    color: black;
-}
-
 /* SIDEBOTTOM */
+
+.sidebottom {
+    margin-top: auto;
+}
 
 .sidebottom .download img {
     height: 20px;
@@ -175,13 +182,13 @@ a {
 }
 
 .sidebottom .download {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #7b7b7b;
 }
 
 .sidebottom .photo_profile {
     width: 30px;
     height: 30px;
-    background-color: gray;
+    background-color: #7b7b7b;
     border-radius: 50%;
 }
 
@@ -248,7 +255,7 @@ SITE CONTENT
 }
 
 .categoria a {
-    color: gray;
+    color: #7b7b7b;
     font-weight: 600;
     font-size: 0.9rem;
     transition: all;
@@ -261,7 +268,7 @@ SITE CONTENT
 .green_line {
     width: 40%;
     margin: auto;
-    border: 1px solid lime;
+    border: 1px solid #a0eb2e;
 }
 
 /* SEZIONI ALBUM */
@@ -322,9 +329,10 @@ SITE CONTENT
 }
 
 .section_title p, .album_info p {
-    color: gray;
+    color: #7b7b7b;
     margin-top: 0.5rem;
     font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .round img, .round .overlay {
@@ -364,7 +372,7 @@ SITE CONTENT
 }
 
 .navbar .left .song, .navbar .left .folders {
-    color: gray;
+    color: #7b7b7b;
 }
 
 .navbar .left .folders {
@@ -442,7 +450,7 @@ SITE CONTENT
 .barra {
     height: 5px;
     border-radius: 5rem;
-    background-color: gray;
+    background-color: #5a5a5a;
     align-items: center;
     transition: all;
 }
@@ -459,7 +467,7 @@ SITE CONTENT
     width: 20%;
     height: 5px;
     border-radius: 5rem;
-    background-color: lightgray;
+    background-color: #c1c1c1;
     transition: all;
 }
 
@@ -477,7 +485,7 @@ SITE CONTENT
 }
 
 .barra:hover .barra_verde {
-    background-color: lime;
+    background-color: #a0eb2e;
 }
 
 .barra:hover .pin_bianco {
