@@ -108,6 +108,12 @@ a {
     width: 100%;
 }
 
+#small_logo {
+    display: none;
+    width: 20px;
+    height: 30px;
+}
+
 .sideicon {
     padding-left: 37px;
     padding-bottom: 0.5rem;
@@ -640,7 +646,43 @@ SITE CONTENT
 }
 
 @media screen and (max-width: 320px) {
+    .site_content {
+        padding: 0;
+    }
     .sidebar {
-        width: 60px;
+        width: 37px;
+    }
+    .sidebar .logo img {
+        display: none;
+    }
+    #small_logo {
+        display: block;
+    }
+    .sideicon img {
+        width: 20px;
+    }
+    .sidebar .sideicon a {
+        display: none;
+    }
+    .playlist {
+        display: none;
+    }
+    .home {
+        border: none;
+    }
+    .sidebar .logo, .sideicon {
+        padding: 0 8px;
+    }
+    .sidebottom .download {
+        border-bottom: none;
+    }
+    .download, .profile {
+        margin: 0;
+    }
+    .sidebottom .photo_profile img {
+        width: 20px;
+    }
+    .album_info .artist {
+        font-size: 11px;
     }
 }
