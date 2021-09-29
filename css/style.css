@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    max-width: 1440px;
 }
 
 /* SITE BACKGROUND COLOR */
@@ -95,7 +94,7 @@ a {
     height: calc(100vh - 100px);
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    overflow-y: auto;
     flex-shrink: 1;
 }
 
@@ -143,6 +142,7 @@ a {
     flex-direction: column;
     padding: 0.5rem 37px;
     height: 100%;
+    min-height: 100px;
     overflow: hidden;
 }
 
